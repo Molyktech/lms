@@ -1,0 +1,299 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  color: #000;
+}
+
+.navbar {
+  background: #000;
+}
+
+#landing {
+  background-image: url(./img/Untitled.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#landing img {
+  display: none;
+}
+
+.heading {
+  max-width: 480px;
+  margin: 0 0 0 28px;
+}
+
+.clearfix {
+  clear: both;
+  height: 3%;
+}
+
+.gallery {
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.gallery .course {
+  border: 1px solid rgb(27, 25, 25);
+  box-shadow: 3px 4px 4px #ccc;
+  background: #000;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px 30px 0;
+  border-radius: 10px;
+}
+
+#about,
+#footer {
+  color: #fff;
+}
+
+#about .row {
+  margin: 30px 0 0;
+}
+
+.about-text {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 250px #cff;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/**testimonial**/
+#testimonial {
+}
+
+#testimonial h2 {
+  position: relative;
+}
+
+#testimonial h2::after {
+  content: "";
+  width: 130px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #ffc107;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.carousel-inner .carousel-item .img-box {
+  width: 135px;
+  height: 135px;
+}
+
+.carousel-control-prev {
+  left: -100px;
+}
+
+.carousel-control-next {
+  right: -100px;
+}
+
+.carousel-indicators {
+  top: 320px;
+  color: #ffc107;
+}
+
+#courses .card-body .btn {
+  width: 130px;
+  text-align: center;
+}
+
+#courses {
+  margin-top: 10%;
+}
+
+#courses .card {
+  margin-bottom: 10px;
+}
+/***card spin***/
+.wrap {
+  width: 200px;
+  margin: auto;
+  z-index: -1;
+}
+
+.sticker {
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused;
+}
+
+.sticker:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+/**spin end**/
+/***footer*/
+#footer .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#footer .col-md-3 {
+  display: flex;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+#footer ul li a {
+  text-decoration: none;
+  color: grey;
+  transition: all 0.5s ease-in-out;
+}
+#footer ul li a:hover {
+  color: gainsboro;
+  font-size: 1.3rem;
+}
+
+.search-box input[type="text"] {
+  width: 60%;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid black;
+  height: 50px;
+  color: white;
+  background: rgba(20, 20, 20, 0.918);
+}
+
+.input-group-text {
+  height: 46px;
+  margin-top: 2px;
+}
+
+.input-group {
+  width: 60%;
+}
+
+.search-box input:focus {
+  box-shadow: 0 0 2px rgba(168, 160, 160, 0.8) inset;
+}
+
+hr {
+  width: 100%;
+  /* height: 0.5px; */
+  background: #ffc107;
+}
+.footer-head h2 {
+  margin-left: 2.9%;
+}
+#footer .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section#footer {
+  padding: 20px 5px;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+  .carousel-inner .carousel-item p {
+    font-size: 14px;
+  }
+
+  .carousel-control-prev {
+    left: -40px;
+  }
+
+  .carousel-control-next {
+    right: -40px;
+  }
+
+  .carousel-indicators {
+    top: 400px;
+  }
+
+  #footer .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wrap img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1029px) {
+  .heading {
+    max-width: 300px;
+  }
+  .wrap img {
+    margin-left: -48px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #landing {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  #landing img {
+    display: block;
+    height: 80%;
+    width: 80%;
+  }
+
+  #about {
+    margin-top: 20%;
+  }
+
+  .input-group {
+    width: auto;
+  }
+}
+@media screen and (max-width: 270px) {
+  .wrap {
+    width: 150px;
+  }
+  .wrap img {
+    width: 100px;
+  }
+}
