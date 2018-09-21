@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: #000;
+  background: #fff;
 }
 
 #home {
@@ -12,8 +12,6 @@ body {
   height: 100%;
   min-width: 100%;
   min-height: 100%;
-  background: #ffffff;
-  color: #000;
 }
 
 .navbar {
@@ -53,8 +51,8 @@ body {
 }
 
 .gallery .course {
-  border: 1px solid rgb(27, 25, 25);
-  box-shadow: 3px 4px 4px #ccc;
+  border: 1px solid rgb(117, 112, 112);
+  box-shadow: 3px 4px 4px rgb(34, 33, 33);
   background: #fff;
   color: #000;
   width: 150px;
@@ -69,11 +67,6 @@ body {
 .gallery .course:hover {
   color: white;
   background: #000;
-}
-
-#about,
-#footer {
-  color: #fff;
 }
 
 #about .row {
@@ -197,7 +190,7 @@ section#footer {
   transition: all 0.5s ease-in-out;
 }
 #footer ul li a:hover {
-  color: gainsboro;
+  color: black;
   font-size: 1.3rem;
 }
 
@@ -205,15 +198,14 @@ section#footer {
   width: 60%;
   border-radius: 5px;
   outline: none;
-  border: 2px solid black;
+  border: 1px solid #cff;
   height: 50px;
   color: white;
-  background: rgba(20, 20, 20, 0.918);
+  background: rgb(0, 0, 0);
 }
 
 .input-group-text {
-  height: 46px;
-  margin-top: 2px;
+  background: #ffc107;
 }
 
 .input-group {
@@ -237,6 +229,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  color: #000;
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
